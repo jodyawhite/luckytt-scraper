@@ -1,0 +1,23 @@
+{
+  "name": "luckytt-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Lucky TT — Draw scraper and API for Netlify",
+  "scripts": {
+    "backfill":       "node scripts/backfill.mjs",
+    "backfill:pw":    "node scripts/backfill.mjs --pw-only",
+    "backfill:cp":    "node scripts/backfill.mjs --cp-only",
+    "backfill:lotto": "node scripts/backfill.mjs --lotto-only",
+    "upload":         "node scripts/backfill.mjs --upload-only"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.0.0",
+    "@netlify/functions": "^2.0.0"
+  },
+  "devDependencies": {
+    "@netlify/plugin-scheduled-functions": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

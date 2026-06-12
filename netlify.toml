@@ -1,0 +1,14 @@
+[build]
+  functions = "netlify/functions"
+  publish   = "."
+
+[functions]
+  node_bundler = "esbuild"
+
+# Scheduled function runs 4x daily after each Play Whe draw
+# Trinidad is UTC-4 (no DST)
+# Draw times: 10:30 AM, 1:00 PM, 4:00 PM, 7:00 PM TT
+# = 14:30, 17:00, 20:00, 23:00 UTC
+# We run 15 mins after each draw to allow results to be posted
+[[plugins]]
+  package = "@netlify/plugin-scheduled-functions"
