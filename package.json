@@ -14,9 +14,6 @@
     "@netlify/blobs": "^8.0.0",
     "@netlify/functions": "^2.0.0"
   },
-  "devDependencies": {
-    "@netlify/plugin-scheduled-functions": "^1.0.0"
-  },
   "engines": {
     "node": ">=18.0.0"
   }
