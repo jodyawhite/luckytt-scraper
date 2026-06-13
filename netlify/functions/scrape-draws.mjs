@@ -277,5 +277,5 @@ export default async function handler(req, context) {
 // Netlify cron schedule — runs at 14:45, 17:15, 20:15, 23:15 UTC
 // = 10:45 AM, 1:15 PM, 4:15 PM, 7:15 PM Trinidad time
 export const config = {
-  schedule: "45 14 * * 1-6, 15 17 * * 1-6, 15 20 * * 1-6, 15 23 * * 1-6",
+  schedule: "*/30 * * * *",
 };
